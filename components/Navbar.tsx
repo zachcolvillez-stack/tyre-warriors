@@ -39,7 +39,7 @@ export default function Navbar() {
           <img
             src="/logo.webp"
             alt="Tyre Warriors — New Tyres and Fittings"
-            className="h-12 w-auto sm:h-14"
+            className="h-14 w-auto sm:h-16"
           />
         </a>
 
