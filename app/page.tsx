@@ -21,6 +21,7 @@ export default function Home() {
       <Marquee />
       <TrustBar />
       <Services />
+      <SpecialDeal />
       <WhyChoose />
       <Fleet />
       <CoverageMap />
