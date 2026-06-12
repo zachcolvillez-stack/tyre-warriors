@@ -10,7 +10,14 @@ export default function Hero() {
       className="relative flex min-h-svh flex-col justify-center overflow-hidden bg-tw-black"
     >
       {/* layered cinematic background */}
-      <div className="absolute inset-0 bg-carbon opacity-60" aria-hidden />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/photos/hero-truck.jpg"
+        alt=""
+        aria-hidden
+        className="absolute inset-0 h-full w-full object-cover opacity-45"
+      />
+      <div className="absolute inset-0 bg-carbon opacity-40" aria-hidden />
       <div className="absolute inset-0 bg-tread" aria-hidden />
       <div
         className="absolute inset-0"
