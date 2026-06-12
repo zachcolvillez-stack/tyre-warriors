@@ -1,4 +1,3 @@
-import Logo from "./Logo";
 import { PhoneIcon } from "./Navbar";
 
 const SERVICE_LINKS = [
