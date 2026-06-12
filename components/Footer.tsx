@@ -16,7 +16,12 @@ export default function Footer() {
     <footer className="machined-edge bg-tw-black">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-3">
         <div>
-          <Logo className="w-56" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.webp"
+            alt="Tyre Warriors — New Tyres and Fittings"
+            className="w-52"
+          />
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-zinc-500">
             Perth&apos;s 24/7 heavy-vehicle tyre specialists. Mobile fitting,
             roadside breakdown response and fleet tyre management across the
