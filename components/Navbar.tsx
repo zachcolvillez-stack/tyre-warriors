@@ -34,8 +34,13 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6">
-        <a href="#top" aria-label="Tyre Warriors home">
-          <LogoMark />
+        <a href="#top" aria-label="Tyre Warriors home" className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.webp"
+            alt="Tyre Warriors — New Tyres and Fittings"
+            className="h-12 w-auto sm:h-14"
+          />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Main">
