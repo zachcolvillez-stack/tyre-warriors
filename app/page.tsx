@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
+import SpecialDeal from "@/components/SpecialDeal";
 import WhyChoose from "@/components/WhyChoose";
 import Fleet from "@/components/Fleet";
 import CoverageMap from "@/components/CoverageMap";
