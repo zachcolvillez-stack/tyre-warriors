@@ -52,7 +52,15 @@ export default function TrustBar() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="machined-edge relative bg-tw-coal" aria-label="Key metrics">
+    <section className="machined-edge relative overflow-hidden bg-tw-coal" aria-label="Key metrics">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/photos/tyre-tread.jpg"
+        alt=""
+        aria-hidden
+        className="absolute inset-0 h-full w-full object-cover opacity-15"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-tw-coal/85 via-tw-coal/70 to-tw-coal/90" aria-hidden />
       <div className="bg-tread absolute inset-0" aria-hidden />
       <div
         ref={ref}
