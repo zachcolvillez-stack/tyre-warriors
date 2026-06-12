@@ -55,8 +55,26 @@ export default function WhyChoose() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.3, duration: 0.7 }}
-              className="red-glow relative mt-12 overflow-hidden rounded-md border border-tw-red/40 bg-gradient-to-br from-tw-red/20 to-transparent p-8"
+              transition={{ delay: 0.25, duration: 0.7 }}
+              className="relative mt-10 overflow-hidden rounded-md border border-white/10"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/photos/mobile-van.jpg"
+                alt="Tyre Warriors mobile fitting van fully stocked with truck tyres and fitting machinery"
+                className="aspect-[16/10] w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-tw-black/80 via-transparent to-transparent" aria-hidden />
+              <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-sm bg-tw-red/90 px-3 py-1.5 text-xs font-bold tracking-[0.2em] text-white uppercase">
+                Mobile fitting unit
+              </span>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.35, duration: 0.7 }}
+              className="red-glow relative mt-6 overflow-hidden rounded-md border border-tw-red/40 bg-gradient-to-br from-tw-red/20 to-transparent p-8"
             >
               <div className="bg-tread absolute inset-0" aria-hidden />
               <div className="relative">
