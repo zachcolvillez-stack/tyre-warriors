@@ -45,7 +45,40 @@ export default function Fleet() {
           description="Tyres are one of the biggest operating costs in heavy transport. We turn them from an unpredictable expense into a managed program."
         />
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          className="relative mt-14 overflow-hidden rounded-lg border border-white/10"
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/photos/fleet-convoy.jpg"
+            alt="Convoy of heavy transport trucks on a Western Australia freight route"
+            className="h-64 w-full object-cover sm:h-80"
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(90deg, rgba(10,10,11,0.92) 0%, rgba(10,10,11,0.55) 45%, transparent 100%)",
+            }}
+            aria-hidden
+          />
+          <div className="absolute inset-0 flex items-center px-8 sm:px-12">
+            <div className="max-w-md">
+              <span className="text-xs font-bold tracking-[0.3em] text-tw-gold uppercase">
+                One supplier · whole fleet
+              </span>
+              <p className="mt-3 font-display text-2xl leading-tight text-white sm:text-3xl">
+                FROM 5 TRUCKS TO 500 — WE KEEP THEM ROLLING
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
           {PILLARS.map((p, i) => (
             <motion.div
               key={p.title}
